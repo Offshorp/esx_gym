@@ -1,4 +1,5 @@
 ### forked from [P4NDAzzGaming/esx_gym](https://github.com/P4NDAzzGaming/esx_gym)
+### edited by [Offshorp](https://github.com/Offshorp/)
 
 Requirements:
 * ES_EXTENDED
