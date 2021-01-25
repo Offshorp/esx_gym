@@ -2,7 +2,6 @@
 ### Edited by [Offshorp](https://github.com/Offshorp/)
 
 # Requirements
-Requirements
 * ES_EXTENDED
 * ESX_MENU_DEFAULT
 * ESX_MENU_DIALOG
@@ -22,7 +21,7 @@ Requirements
 
 # Installation
 1. Extract esx_gym.zip into your resource folder.
-2. Start the script in your server.cfg or wherever you start scripts. Correct row: **start esx_gym**
+2. Start the script in your server.cfg or wherever you start scripts. Correct row: **ensure esx_gym**
 3. Import the esx_gym.sql into your database (table: items) or do it manually.
 4. Start/Restart your server.
 5. Done, have a good time at the gym and get healthy!
