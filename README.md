@@ -8,7 +8,7 @@
 * [ESX_MENU_LIST](https://github.com/esx-framework/esx_menu_list)
 * [ESX_STATUS](https://github.com/esx-framework/esx_status)
 * [ESX_BASICNEEDS](https://github.com/esx-framework/esx_basicneeds)
-* **NEW** [ESX_AMBULANCEJOB](https://github.com/esx-framework/esx_ambulancejob)
+* **NEW** -> [ESX_AMBULANCEJOB](https://github.com/esx-framework/esx_ambulancejob)
 
 # Features
 * Plenty of exercises such as Yoga, Situps, Pushups, Weights, Chins/pull-ups, Bicycle exercise (rental).
