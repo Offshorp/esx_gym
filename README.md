@@ -2,12 +2,13 @@
 ### Edited by [Offshorp](https://github.com/Offshorp/)
 
 # Requirements
-* ES_EXTENDED
-* ESX_MENU_DEFAULT
-* ESX_MENU_DIALOG
-* ESX_MENU_LIST
-* ESX_STATUS
-* ESX_BASICNEEDS
+* [ES_EXTENDED](https://github.com/esx-framework/es_extended)
+* [ESX_MENU_DEFAULT](https://github.com/esx-framework/esx_menu_default)
+* [ESX_MENU_DIALOG](https://github.com/esx-framework/esx_menu_dialog)
+* [ESX_MENU_LIST](https://github.com/esx-framework/esx_menu_list)
+* [ESX_STATUS](https://github.com/esx-framework/esx_status)
+* [ESX_BASICNEEDS](https://github.com/esx-framework/esx_basicneeds)
+* **NEW** [ESX_AMBULANCEJOB](https://github.com/esx-framework/esx_ambulancejob)
 
 # Features
 * Plenty of exercises such as Yoga, Situps, Pushups, Weights, Chins/pull-ups, Bicycle exercise (rental).
@@ -20,8 +21,8 @@
 * The bandage is giving the player their max health divided with 3 + their current health.
 
 # Installation
-1. Extract esx_gym.zip into your resource folder.
-2. Start the script in your server.cfg or wherever you start scripts. Correct row: **ensure esx_gym**
-3. Import the esx_gym.sql into your database (table: items) or do it manually.
+1. Extract **esx_gym.zip** into your resource folder.
+2. Start the script in your `server.cfg` or wherever you start scripts. Correct row: **ensure esx_gym**
+3. Import the `esx_gym.sql` into your database (table: items) or do it manually. **NEW** Find there in `localization` directory
 4. Start/Restart your server.
 5. Done, have a good time at the gym and get healthy!
