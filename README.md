@@ -1,5 +1,5 @@
 ### Forked from [P4NDAzzGaming/esx_gym](https://github.com/P4NDAzzGaming/esx_gym)
-### Edited by [Offshorp](https://github.com/Offshorp/)
+### Edited & Optimized by [Offshorp](https://github.com/Offshorp/)
 
 # Requirements
 * [ES_EXTENDED](https://github.com/esx-framework/es_extended)
