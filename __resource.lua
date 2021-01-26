@@ -1,16 +1,24 @@
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
-description 'ESX Gym'
 
-version '0.0.2'
+description 'ESX Gym | Edited by Offshorp'
+author 'P4NDAzzGaming & Offshorp'
+
+version '1.0.0'
 
 server_scripts {
-  '@es_extended/locale.lua',
   '@mysql-async/lib/MySQL.lua',
-  'server/main.lua'
+  '@es_extended/locale.lua',
+  'locales/en.lua',
+  'locales/fr.lua',
+  'config.lua',
+  'server/main.lua',
 }
 
 client_scripts {
   '@es_extended/locale.lua',
-  'client/main.lua'
+  'locales/en.lua',
+  'locales/fr.lua',
+  'config.lua',
+  'client/main.lua',
 }
