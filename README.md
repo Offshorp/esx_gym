@@ -18,7 +18,6 @@
 * Business hours, pretty much it just prints that the gym is open 24hrs/ day.
 * Before any exercise the script will ALWAYS doublecheck if the player actually has a membership or not, if the player needs to rest or not and if the player already is training or not etc.
 * The script doesn't really take too much CPU usage, I've never received a script warning from ESX_GYM.
-* The bandage is giving the player their max health divided with 3 + their current health.
 
 # Installation
 1. Extract **esx_gym.zip** into your resource folder.
