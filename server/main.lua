@@ -8,7 +8,6 @@ function notification(text)
 	TriggerClientEvent('esx:showNotification', source, text)
 end
 
-
 RegisterServerEvent('esx_gym:checkChip')
 AddEventHandler('esx_gym:checkChip', function()
 	local _source = source
@@ -43,7 +42,6 @@ end
 RegisterServerEvent('esx_gym:BuyBike')
 AddEventHandler('esx_gym:BuyBike', function(data)
 	local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
 
 	BuyABike(_source, data.value, data.price, data.name)
 end)
@@ -64,7 +62,6 @@ end
 RegisterServerEvent('esx_gym:BuyItem')
 AddEventHandler('esx_gym:BuyItem', function(data)
 	local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
 	
 	BuyItem(_source, data.value, data.price, data.name)
 end)
@@ -101,5 +98,5 @@ ESX.RegisterUsableItem('gym_membership', function(source)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	notification(_U('membercard'))
+	TriggerClientEvent('esx:showNotification', source, _U('membercard'))
 end)

@@ -59,21 +59,29 @@ AddEventHandler('esx_gym:falseMembership', function()
 	membership = false
 end)
 
-function shopMakers(pos)
+function shopMakers(plyCoords, pos)
 	for k in pairs(pos) do
-		DrawMarker(1, pos[k].x, pos[k].y, pos[k].z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.25, 1.25, 0.5, 0, 153, 255, 100, 0, 0, 0, 0)
+		local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, pos[k].x, pos[k].y, pos[k].z)
+		if dist <= 20 then
+			DrawMarker(1, pos[k].x, pos[k].y, pos[k].z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.25, 1.25, 0.5, 0, 153, 255, 100, 0, 0, 0, 0)
+		end
 	end
 end
 
-function exersiceMakers(pos)
+function exersiceMakers(plyCoords, pos)
 	for k in pairs(pos) do
-		DrawMarker(21, pos[k].x, pos[k].y, pos[k].z, 0, 0, 0, 0, 0, 0, 0.30, 0.30, 0.30, 0, 255, 50, 200, 1, 0, 0, 1)
+		local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, pos[k].x, pos[k].y, pos[k].z)
+		if dist <= 20 then
+			DrawMarker(21, pos[k].x, pos[k].y, pos[k].z, 0, 0, 0, 0, 0, 0, 0.30, 0.30, 0.30, 0, 255, 50, 200, 1, 0, 0, 1)
+		end
 	end
 end
 
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
+
+        local plyCoords = GetEntityCoords(GetPlayerPed(-1), false)
 
         local gym = Config.Pos.gym
 		local rentbike = Config.Pos.rentbike
@@ -83,13 +91,13 @@ Citizen.CreateThread(function()
 		local situps = Config.Pos.situps
 		local chins = Config.Pos.chins
 
-		shopMakers(gym)
-		shopMakers(rentbike)
-		exersiceMakers(arms)
-		exersiceMakers(pushup)
-		exersiceMakers(yoga)
-		exersiceMakers(situps)
-		exersiceMakers(chins)
+		shopMakers(plyCoords, gym)
+		shopMakers(plyCoords, rentbike)
+		exersiceMakers(plyCoords, arms)
+		exersiceMakers(plyCoords, pushup)
+		exersiceMakers(plyCoords, yoga)
+		exersiceMakers(plyCoords, situps)
+		exersiceMakers(plyCoords, chins)
     end
 end)
 
@@ -326,5 +334,5 @@ end
 
 RegisterNetEvent('esx_gym:SpawnBike')
 AddEventHandler('esx_gym:SpawnBike', function(type)
-    TriggerEvent('esx:spawnVehicle', type)
+	TriggerEvent('esx:spawnVehicle', type)
 end)
